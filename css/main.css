@@ -144,8 +144,8 @@ main, .content{
     width: 70%;
 }
 .col-foot{
-    position: absolute !important;
-    bottom: 0 !important; 
+    position: relative;
+    bottom: 0; 
     width: 100%;
     float: left;
 }
