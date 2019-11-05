@@ -131,7 +131,7 @@ main, .content{
     margin-top: 6cm;
 }
 .footer{
-
+    margin-bottom: 0px;
     width: 100%;
     background-color: #252323;
     height: 50px;
