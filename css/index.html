@@ -7,12 +7,25 @@
     <link rel="shortcut icon" href="../img/Símbolo/RGB/PNG/Símbolo Azul-Sem Fundo.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
     <script src="/js/navbar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <title>Felipe Gomes</title>
 </head>
 
+<script>
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 40) { // se rolar 40px ativa o evento
+            $("#myTopnav").addClass("hard"); //coloca a classe "ativo" no id=menu
+        } else {
+            $("#myTopnav").removeClass("hard"); //se for menor que 40px retira a classe "ativo" do id=menu
+        }
+    });
+</script>
+
 <body>
     <div class="topnav" id="myTopnav">
-        <a href="#home" class="active"><img src="../img/Símbolo/RGB/PNG/Símbolo Cinza.png" alt=""></a>
+        <a href="#home" class="active logo"><img src="../img/Símbolo/RGB/PNG/Símbolo Cinza.png" alt=""></a>
         <a href="#">
             <p>Quem Sou</p>
         </a>
@@ -25,24 +38,34 @@
         <a href="#">
             <p>Contato</p>
         </a>
-        <a href="javascript:void(0);" class="icon active" onclick="myFunction()">
-            <img src="../img/Pattern/RGB/PNG/Grupo 28.png" alt="">
-        </a>
+        <div class="menu icon active">
+            <input type="checkbox" id="check" onclick="myFunction()">
+            <label for="check">
+                </label>
+            <span>
+                </span>
+        </div>
     </div>
 
     <main class="main" id="main">
         <section>
-            <h1>Todo mundo<br> precisa
-                <br> de um <span style="font-style: italic;">site</span></h1>
-
-            <h2>
-                <img src="../img/Pattern/RGB/PNG/Simbolo cinza esquerdo.png" alt=""> Junte-se
-                <img src="../img/Pattern/RGB/PNG/Simbolo cinza direito.png" alt="">
-
-            </h2>
+            <div class="container">
+                <h1>Todo mundo<br> precisa
+                    <br> de um <span style="font-style: italic;">site</span></h1>
+                <div class="join-us">
+                    <div>
+                        <img src="../img/Pattern/RGB/PNG/Simbolo cinza esquerdo.png" alt="" class="leftIcon">
+                    </div>
+                    <h2>
+                        Junte-se
+                    </h2>
+                    <div>
+                        <img src="../img/Pattern/RGB/PNG/Simbolo cinza direito.png" alt="" class="rightIcon">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-
 </body>
 
 </html>
