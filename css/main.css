@@ -110,6 +110,14 @@
         font-display: swap;
     }
     
+    *,
+    *:before,
+    *:after {
+        -webkit-box-sizing: inherit;
+        -moz-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+    
     body {
         font-family: 'Work Sans';
         margin: 0;
@@ -222,6 +230,49 @@
         position: absolute;
     }
     
+    .about {
+        background-color: #CFD2D3;
+        display: grid;
+        place-items: center;
+    }
+    
+    .about h1 {
+        margin: 0;
+        padding: 3rem;
+        text-align: center;
+    }
+    
+    .about aside div span img {
+        max-width: 150px;
+        width: 100%;
+        border-radius: 100%;
+        padding: 1rem;
+    }
+    
+    .about aside div span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+    
+    aside article {
+        display: flex;
+        flex-flow: row;
+        padding: 3rem;
+        text-align: center;
+    }
+    
+    .bsVision {
+        max-width: 80px;
+        width: 100%;
+    }
+    
+    aside h3 {
+        font-size: 2rem;
+    }
+    
     @media screen and (min-width: 720px) {
         .topnav.hard {
             background-color: rgba(10, 24, 32, 1);
@@ -248,6 +299,25 @@
         }
         .topnav.hard a:hover:not(.active) {
             border-bottom: 0.4rem solid #c4c8c9;
+        }
+        aside {
+            text-align: start;
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        aside article {
+            display: flex;
+            flex: 0 0 40%;
+            text-align: start;
+        }
+        .about div {
+            display: grid;
+            place-items: center;
+            width: 50%;
+            padding: 5rem;
         }
     }
     
@@ -360,6 +430,20 @@
             position: absolute;
             transition: all .3s linear;
         }
+        .about {
+            padding: 2rem;
+        }
+        section h1 {
+            padding: 0 4rem;
+            font-weight: 900;
+            color: #FFFFFF;
+            font-size: 3rem;
+        }
+        .about div,
+        .about aside div span {
+            width: 100%;
+            text-align: center;
+        }
         #check:checked~span {
             border: 3px solid transparent;
         }
@@ -368,12 +452,6 @@
         }
         #check:checked~span::after {
             transform: translate(0px, 17px) rotate(45deg);
-        }
-        section h1 {
-            padding: 0 4rem;
-            font-weight: 900;
-            color: #FFFFFF;
-            font-size: 3rem;
         }
     }
     
