@@ -4,108 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/Símbolo/RGB/PNG/Símbolo Azul-Sem Fundo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/main.css">
-    <script src="/js/navbar.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://kit.fontawesome.com/86530e25de.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/Símbolo/RGB/PNG/Símbolo Cinza.png" type="image/x-icon">
     <title>Felipe Gomes</title>
 </head>
 
-<script>
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        if (scroll >= 40) { // se rolar 40px ativa o evento
-            $("#myTopnav").addClass("hard"); //coloca a classe "ativo" no id=menu
-        } else {
-            $("#myTopnav").removeClass("hard"); //se for menor que 40px retira a classe "ativo" do id=menu
-        }
-    });
-</script>
-<script>
-    jQuery(document).ready(function($) {
-        $('.scroll').click(function(event) {
-            event.preventDefault();
-            $('html,body').animate({
-                scrollTop: $(this.hash).offset().top
-            }, 800)
-        })
-    })
-</script>
+<body style="background-image: url('./img/Banner/site-em-construcao.jpg'); background-size: cover;
+background-attachment: fixed;
+background-origin: content-box;
+background-repeat: no-repeat;
+background-position: center;
+overflow-x: hidden; display: flex; justify-content: center; height: 100vh; align-items: center; flex-direction: column;">
 
-<body id="home">
-    <div class="topnav" id="myTopnav">
-        <a class="scroll" href="#home" class="active logo"><img src="../img/Símbolo/RGB/PNG/Símbolo Cinza.png" alt=""></a>
-        <a class="scroll" href="#about">
-            <p>Quem Sou</p>
-        </a>
-        <a class="scroll" href="#">
-            <p>Clientes</p>
-        </a>
-        <a class="scroll" href="#">
-            <p>Serviços</p>
-        </a>
-        <a class="scroll" href="#">
-            <p>Contato</p>
-        </a>
-        <div class="menu icon active">
-            <input type="checkbox" id="check" onclick="myFunction()">
-            <label for="check">
-                </label>
-            <span>
-                </span>
+    <div>
+        <img src="./img/Símbolo/RGB/PNG/Símbolo Cinza.png" alt="" style="width: 100%;
+            max-width: 100px;
+        ">
+    </div>
+    <div>
+        <h1 style="text-align: center; color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Estou preparando um site novinho!</h1>
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+
+            <a href="https://www.instagram.com/felipegomss/" target="_blank" style="text-decoration: none; color: #ffffff; padding: 0 1rem;"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://web.facebook.com/felipegomss64" target="_blank" style="text-decoration: none; color: #ffffff; padding: 0 1rem;"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="https://github.com/felipegomss" target="_blank" style="text-decoration: none; color: #ffffff; padding: 0 1rem;"><i class="fab fa-github fa-2x"></i></a>
         </div>
     </div>
 
-    <main class="main" id="main">
-        <section>
-            <div class="container">
-                <h1>Todo mundo<br> precisa
-                    <br> de um <span style="font-style: italic;">site</span></h1>
-                <div class="join-us">
-                    <div>
-                        <img src="../img/Pattern/RGB/PNG/Simbolo cinza esquerdo.png" alt="" class="leftIcon">
-                    </div>
-                    <h2>
-                        Junte-se
-                    </h2>
-                    <div id="about">
-                        <img src="../img/Pattern/RGB/PNG/Simbolo cinza direito.png" alt="" class="rightIcon">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="about">
-            <h1>Quem sou</h1>
-            <aside>
-                <div>
-                    <span>
-                        <img src="./img/Fotos/felipe-pic01.png" alt="">
-                        <p>
-                            Meu nome é Felipe Gomes,sou acadêmico de Engenharia de Software na UCSal.</p>
-                        </span>
-
-                    <p>Sou apaixonado por tecnologia e por fazer ideias virarem realidade por meio da programação. Atuei em projetos acadêmicos e em 2020 decidi dar um start na minha carreira profissional com o intuito de tirar conceitos do papel e expandir
-                        propostas já existentes.</p>
-                </div>
-                <article style="display: flex; flex-direction: column; align-items: center;">
-                    <h3>Missão</h3>
-                    <img src="./img/Pattern/RGB/PNG/Missão Azul.png" alt="" class="bsVision">
-                    <p>Auxiliar empreendedores a expandirem seus negócios no âmbito virtual por meio de Websites, viabilizando à essas entidades uma maior visibilidade num ambiente que cresce cada dia mais.</p>
-                </article>
-                <article style="display: flex; flex-direction: column; align-items: center;">
-                    <h3>Visão</h3>
-                    <img src="./img/Pattern/RGB/PNG/Visão Azul.png" alt="" class="bsVision">
-                    <p>Ser referência no mercado de aplicativos e possibilitar à todas as empresas uma plataforma de divulgação e integração com seus clientes.</p>
-                </article>
-                <div style="display: flex; flex-direction: column; align-items: center; padding: 0rem;">
-                    <h3>Valores</h3>
-                    <img src="./img/Pattern/RGB/PNG/Valores Azul.png" alt="" class="bsVision">
-                    <p>Levar como prioridade a satisfação do cliente entregando projetos únicos com agilidade e comprometimento.</p>
-                </div>
-            </aside>
-        </div>
-    </main>
 </body>
 
 </html>
